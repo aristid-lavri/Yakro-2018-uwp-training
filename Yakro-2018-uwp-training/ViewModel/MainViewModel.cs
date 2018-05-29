@@ -16,6 +16,11 @@ namespace Yakro_2018_uwp_training.ViewModel
     /// See http://www.mvvmlight.net
     /// </para>
     /// </summary>
+    /// 
+
+
+
+
     public class MainViewModel : ViewModelBase
     {
         private readonly IDataService _dataService;
