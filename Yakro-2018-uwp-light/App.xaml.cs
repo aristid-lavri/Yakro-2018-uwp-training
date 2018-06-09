@@ -1,7 +1,4 @@
-﻿using GalaSoft.MvvmLight.Ioc;
-using GalaSoft.MvvmLight.Threading;
-using GalaSoft.MvvmLight.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,8 +14,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Yakro_2018_uwp_light.View;
 
-namespace Yakro_uwp
+namespace Yakro_2018_uwp_light
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
@@ -31,16 +29,6 @@ namespace Yakro_uwp
         /// </summary>
         public App()
         {
-            var navigationService = new NavigationService();
-            SimpleIoc.Default.Register<INavigationService>(() => navigationService);
-
-            navigationService.Configure(ViewModel.ViewModelLocator.LoginViewKey, typeof(ViewModel.LoginViewModel));
-            navigationService.Configure(ViewModel.ViewModelLocator.SettingViewKey, typeof(ViewModel.SettingViewModel));
-            navigationService.Configure(ViewModel.ViewModelLocator.MainViewKey, typeof(ViewModel.MainViewModel));
-
-            SimpleIoc.Default.Register<IDialogService, DialogService>();
-
-
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
@@ -79,12 +67,10 @@ namespace Yakro_uwp
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(View.MainView), e.Arguments);
+                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
-
-                DispatcherHelper.Initialize();
             }
         }
 

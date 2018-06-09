@@ -9,7 +9,32 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     DataContext="{Binding SettingVM, Source={StaticResource ViewModelLocator}}">
 
-    <Grid>
-        
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" 
+          HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid HorizontalAlignment="Stretch" MinHeight="100"
+              Height="300" MaxHeight="350"
+              VerticalAlignment="Top" Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="62"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch"
+                        VerticalAlignment="Top"
+                        MaxHeight="50">
+                <Grid MinHeight="20" MaxWidth="50" Height="50">
+                    <Ellipse Stroke="Pink" StrokeThickness="3" Width="50"
+                             Stretch="UniformToFill"/>
+                    <Image MaxWidth="50" Width="50" VerticalAlignment="Stretch"/>
+                </Grid>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Stretch" 
+                           Margin="15, 0, 0, 0" Text="Enter text here"/>
+            </StackPanel>
+            <TextBlock Grid.Row="1" VerticalAlignment="Stretch"
+                       HorizontalAlignment="Stretch" 
+                       TextTrimming="CharacterEllipsis"
+                       TextWrapping="Wrap" TextAlignment="Justify"
+                       Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></TextBlock>
+        </Grid>
     </Grid>
 </Page>

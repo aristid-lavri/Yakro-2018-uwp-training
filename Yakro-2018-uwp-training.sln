@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yakro-2018-uwp", "App1\Yakro-2018-uwp.csproj", "{8EC1EF17-A447-4802-B001-D8DED32075E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yakro-2018-uwp-light", "Yakro-2018-uwp-light\Yakro-2018-uwp-light.csproj", "{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -33,6 +35,24 @@ Global
 		{8EC1EF17-A447-4802-B001-D8DED32075E4}.Release|x86.ActiveCfg = Release|x86
 		{8EC1EF17-A447-4802-B001-D8DED32075E4}.Release|x86.Build.0 = Release|x86
 		{8EC1EF17-A447-4802-B001-D8DED32075E4}.Release|x86.Deploy.0 = Release|x86
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Debug|ARM.Build.0 = Debug|ARM
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Debug|ARM.Deploy.0 = Debug|ARM
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Debug|x64.ActiveCfg = Debug|x64
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Debug|x64.Build.0 = Debug|x64
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Debug|x64.Deploy.0 = Debug|x64
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Debug|x86.ActiveCfg = Debug|x86
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Debug|x86.Build.0 = Debug|x86
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Debug|x86.Deploy.0 = Debug|x86
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Release|ARM.ActiveCfg = Release|ARM
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Release|ARM.Build.0 = Release|ARM
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Release|ARM.Deploy.0 = Release|ARM
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Release|x64.ActiveCfg = Release|x64
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Release|x64.Build.0 = Release|x64
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Release|x64.Deploy.0 = Release|x64
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Release|x86.ActiveCfg = Release|x86
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Release|x86.Build.0 = Release|x86
+		{AF8979FE-3C6E-4B1B-8F78-4F2056A7E19F}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
